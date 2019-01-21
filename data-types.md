@@ -11,6 +11,7 @@
 ```
 ```text
 Your answer.
+8
 ```
 
 ```rb
@@ -18,6 +19,7 @@ Your answer.
 ```
 ```text
 Your answer.
+144
 ```
 
 ```rb
@@ -25,6 +27,7 @@ Your answer.
 ```
 ```text
 Your answer.
+a milli a millia milli a millia milli a milli
 ```
 
 ```rb
@@ -32,6 +35,8 @@ Your answer.
 ```
 ```text
 Your answer.
+a milli a milli 
+
 ```
 
 ```rb
@@ -40,6 +45,8 @@ puts "My favorite number is: " + my_favorite_number
 ```
 ```text
 Your answer.
+it will return error.
+
 ```
 
 ```rb
@@ -48,6 +55,8 @@ puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
 Your answer.
+My favorite number is: 13
+
 ```
 
 ### Truthiness and Falsiness
@@ -65,6 +74,15 @@ Your answer.
 [ ] nil
 ```
 
+[true] false
+[true] 0
+[true] ""
+[false] null
+[true] [ ] (empty array)
+[false] undefined
+[false] NaN
+[true] nil
+
 #### What are the outputs and/or side effects of the following code snippets?
 
 * Make a guess before testing your answer.
@@ -79,6 +97,7 @@ end
 ```
 ```text
 Your answer.
+My name is: 
 ```
 
 ```rb
@@ -89,6 +108,8 @@ end
 ```
 ```text
 Your answer.
+My name is: nil
+
 ```
 
 ```rb
@@ -99,6 +120,7 @@ end
 ```
 ```text
 Your answer.
+My age is: 21
 ```
 
 ```rb
@@ -109,6 +131,7 @@ end
 ```
 ```text
 Your answer.
+My age is: gets.chomp
 ```
 
 ### Conditionals
@@ -137,6 +160,16 @@ Your output should look something like this...
   i = 1
   while i <= 100
     # Your code goes in here.
+    1.upto(100) do |i|
+    if i % 5 == 0 and i % 3 == 0
+      puts "FizzBuzz"
+    elsif i % 5 == 0
+      puts "Buzz"
+    elsif i % 3 == 0
+      puts "Fizz"
+    else
+      puts i
+    end
   end
   ```
 
