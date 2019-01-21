@@ -10,28 +10,35 @@
 2 ** 3
 ```
 ```text
-Your answer.
+i falied at gussing it 
+i had to test it , i googled it , it's the power of 
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+my guess : 144 
+the right answer: yaaaah i got it right 
+right or wrong ? right
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+my guess :a milli a millia milli a millia milli a milli
+the right answer:  a milli a millia milli a millia milli a milli
+right or wrong ? right 
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+my guess :a milli a milli 
+the right answer: ERROR :)
+right or wrong ? wrong
 ```
 
 ```rb
@@ -39,7 +46,9 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+my guess : My favorite number is: 13
+the right answer: ERROR
+right or wrong ? wrong
 ```
 
 ```rb
@@ -47,7 +56,9 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+my guess : My favorite number is: 13
+the right answer: My favorite number is: 13
+right or wrong ? right
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +66,13 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
+[ ] false 
+[false] 0
+[ ] "" 
 [ ] null
-[ ] [ ] (empty array)
-[ ] undefined
-[ ] NaN
-[ ] nil
+[ ] undefined 
+[ ] NaN 
+[ falls] nil 
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is:
 ```
 
 ```rb
@@ -88,7 +98,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+no output
 ```
 
 ```rb
@@ -98,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+ERROR
 ```
 
 ```rb
@@ -108,7 +118,7 @@ if age
 end
 ```
 ```text
-Your answer.
+What did just happed ? 
 ```
 
 ### Conditionals
