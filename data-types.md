@@ -10,28 +10,29 @@
 2 ** 3
 ```
 ```text
-Your answer.
+# ** means we multiplies the number in itself 3 times, 2*2*2 = 8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+# first we do the math in order (16/4) = 4 then (2+1) = 3 => 4 * 3 = 12 => 12 * 12 = 144
+# final result 144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+# a milli a millia milli a millia milli a milli
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+undefined method `/' for "a milli a milli a milli a milli ":String (NoMethodError)
 ```
 
 ```rb
@@ -39,7 +40,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+# undefined
 ```
 
 ```rb
@@ -47,7 +48,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+# My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,15 +56,17 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
+[MARK] false
+[MARK] 0
+[MARK] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[MARK] nil
+
 ```
+
 
 #### What are the outputs and/or side effects of the following code snippets?
 
@@ -78,7 +81,8 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is: 
+empty name
 ```
 
 ```rb
@@ -88,7 +92,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+// no result going to show , the name of the file will git back 
 ```
 
 ```rb
@@ -98,7 +102,7 @@ if age
 end
 ```
 ```text
-Your answer.
+undefined local variable or method `no_name' for main:Object (NameError)
 ```
 
 ```rb
@@ -108,7 +112,8 @@ if age
 end
 ```
 ```text
-Your answer.
+My age is: 
+empty age result 
 ```
 
 ### Conditionals
@@ -125,6 +130,18 @@ Fizz-Buzz is a classic coding exercise that you can create using your knowledge 
 * If the number is divisible by both 3 and 5, print `"FizzBuzz"`.
 * If the number does not meet any of the above conditions, just print the number.
 
+1.upto(100) do |i|
+    if i % 5 == 0 and i % 3 == 0
+      puts "FizzBuzz"
+    elsif i % 5 == 0
+      puts "Buzz"
+    elsif i % 3 == 0
+      puts "Fizz"
+    else
+      puts i
+    end
+  end
+
 Your output should look something like this...
 ```
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz, 31, 32, Fizz, 34, Buzz, Fizz, ...
@@ -136,7 +153,7 @@ Your output should look something like this...
   ```rb
   i = 1
   while i <= 100
-    # Your code goes in here.
+  i += 1 while i <100
   end
   ```
 
