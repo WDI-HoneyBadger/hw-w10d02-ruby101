@@ -93,7 +93,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nothing happened
 ```
 
 ```rb
