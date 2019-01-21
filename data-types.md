@@ -108,8 +108,8 @@ if age
 end
 ```
 ```text
-Error out 
-TypeError (no implicit conversion of nil into String)
+userinput: 25
+output: My age is: 25
 ```
 
 ### Conditionals
