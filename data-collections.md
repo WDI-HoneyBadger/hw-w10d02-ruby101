@@ -9,7 +9,7 @@ planeteers = ["Earth", "Wind", "Captain Planet", "Fire", "Water"]
 Access the second value in `planeteers`.
 
 ```rb
-# Your answer here
+puts planeteers[1]
 ```
 
 Add "Heart" to the end of `planeteers`.
