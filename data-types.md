@@ -9,45 +9,45 @@
 ```rb
 2 ** 3
 ```
-```text
-Your answer.
+```text: First I thought the answer will be 6 but after I run it in the terminal, the answer is 8. The reason I thought is 6  because I thought this how ruby works.
+Your answer.  8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
-```text
-Your answer.
+```text: 16 / 4 = 4 *  2 + 1 = 3  ** 2 .. 12 * 12 = 144 * 12 = 1728 this result befor I run it in terminal. 
+Your answer.: 144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
-```text
-Your answer.
+```text: ("a milli " + "a milli")= a milli a milli * 3 = a milli a milli a milli a milli a milli a milli
+Your answer.: "a milli a millia milli a millia milli a milli"
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
-```text
-Your answer.
+```text: the resualt is going to be "a milli " "a milli " "a milli " "a milli " /2 will "a milli ""a milli "
+Your answer.: "a milli a milli" 
 ```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
-```text
-Your answer.
+```text: the string + value of my_favorite_number= "My favorite number is: 13"
+Your answer.: I tried to run in it the terminal but it is not working with me. I could not know why. But the answer My favorite number is: 13 
 ```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
-```text
-Your answer.
+```text: This question is the same previos question but with curley braces object.  It is working now with object curley. 
+Your answer.: My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,10 +55,10 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
+[ ] false  
+[ ] 0      =>
 [ ] ""
-[ ] null
+[ ] null  false
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
@@ -77,8 +77,8 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
-```text
-Your answer.
+```text : No value in no_name
+Your answer.: My name is:
 ```
 
 ```rb
@@ -87,18 +87,18 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
-```text
-Your answer.
+```text: It is empty value 
+Your answer.: Does not run in the terminal it gave me error
 ```
 
 ```rb
 age = 21
 if age
-  puts "My age is: " + no_name
+  puts "My age is: " + no_name 
 end
 ```
-```text
-Your answer.
+```text: there is 
+Your answer.:  it is error because no_name is not defiend
 ```
 
 ```rb
@@ -107,8 +107,8 @@ if age
   puts "My age is: " + age
 end
 ```
-```text
-Your answer.
+```text: I added in the input 99 
+Your answer.: My age is: 99
 ```
 
 ### Conditionals

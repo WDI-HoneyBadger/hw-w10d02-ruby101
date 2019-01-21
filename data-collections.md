@@ -10,36 +10,44 @@ Access the second value in `planeteers`.
 
 ```rb
 # Your answer here
+planeteers [1]
 ```
 
 Add "Heart" to the end of `planeteers`.
 
 ```rb
 # Your answer here
+planeteers.push("heart")
 ```
 
 Remove "Captain Planet" from the array (without using a method).
 
 ```rb
 # Your answer here
+planeteers.delete("Captain Planet")
+``` I tried to doit (with using methods)
 ```
 
 Combine `planeteers` with `rangers = ["Red", "Blue", "Pink", "Yellow", "Black"]` and save the result in a variable called `heroes`.
 
 ```rb
 # Your answer here
+heroes = planeteers + rangers
 ```
 
 Alphabetize the contents of `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.2.0/Array.html).
 
 ```rb
 # Your answer here
+heroes.sort
 ```
 
 Randomize the contents of `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.2.0/Array.html).
 
 ```rb
 # Your answer here
+heroes.sample
+
 ```
 
 #### Bonus
