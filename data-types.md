@@ -55,14 +55,14 @@ My favorite number is: 13 ==> because we put #{variableName}
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
-[ ] null
-[ ] [ ] (empty array)
-[ ] undefined
-[ ] NaN
-[ ] nil
+[false] false
+[true ] 0
+[true ] ""
+[false ] null
+[false] [ ] (empty array)
+[false] undefined
+[false ] NaN
+[false ] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
