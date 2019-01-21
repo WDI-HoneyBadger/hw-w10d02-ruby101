@@ -31,7 +31,7 @@
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Error out
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
- => 13
+Error out
 ```
 
 ```rb
@@ -55,14 +55,14 @@ My favorite number is: 13
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[ ] false    - False
 [ ] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[ ] nil      - False
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is:
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nil
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Error out
 ```
 
 ```rb
@@ -108,7 +108,8 @@ if age
 end
 ```
 ```text
-Your answer.
+Error out 
+TypeError (no implicit conversion of nil into String)
 ```
 
 ### Conditionals
