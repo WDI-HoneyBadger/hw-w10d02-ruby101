@@ -10,7 +10,7 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8
 ```
 
 ```rb
