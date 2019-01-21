@@ -9,37 +9,42 @@ planeteers = ["Earth", "Wind", "Captain Planet", "Fire", "Water"]
 Access the second value in `planeteers`.
 
 ```rb
-# Your answer here
+puts planeteers[1]
 ```
 
 Add "Heart" to the end of `planeteers`.
 
 ```rb
-# Your answer here
+planeteers << "Heart"
+puts planeteers.inspect
 ```
 
 Remove "Captain Planet" from the array (without using a method).
 
 ```rb
-# Your answer here
+planeteers.delete_if {|x| x ==  "Captain Planet" } 
+puts planeteers.inspect
 ```
 
 Combine `planeteers` with `rangers = ["Red", "Blue", "Pink", "Yellow", "Black"]` and save the result in a variable called `heroes`.
 
 ```rb
-# Your answer here
+planeteers = ["Earth", "Wind", "Captain Planet", "Fire", "Water"]
+rangers = ["Red", "Blue", "Pink", "Yellow", "Black"]
+heroes = planeteers.concat(rangers)
+puts heroes.inspect
 ```
 
 Alphabetize the contents of `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.2.0/Array.html).
 
 ```rb
-# Your answer here
+puts planeteers.sort.inspect
 ```
 
 Randomize the contents of `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.2.0/Array.html).
 
 ```rb
-# Your answer here
+puts heroes.sample
 ```
 
 #### Bonus
@@ -47,13 +52,13 @@ Randomize the contents of `heroes` using a method. [The Ruby documentation might
 Select a random element from `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.2.0/Array.html).
 
 ```rb
-# Your answer here
+puts heroes.sample
 ```
 
 Select all elements in `heroes` that begin with "B" using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.2.0/Array.html).
-
+puts heroes.include?('B');
 ```rb
-# Your answer here
+puts heroes.include?('B');
 ```
 
 ### Hashes
@@ -61,19 +66,23 @@ Select all elements in `heroes` that begin with "B" using a method. [The Ruby do
 Initialize a hash called `ninja_turtle` with the properties `name`, `weapon` and `radical`. They should have values of "Michelangelo", "Nunchuks" and `true` respectively.
 
 ```rb
-# Your answer here
+ninja_turtle = {
+    name: "Michelangelo",
+    weapon: "Nunchuks",
+    radical: "true"
+}
 ```
 
 Add a key `age` to `ninja_turtle`. Set it to whatever numerical value you'd like.
 
 ```rb
-# Your answer here
+ninja_turtle.merge!({:age => 10})
 ```
 
 Remove the `radical` key-value pair from `ninja_turtle`.
 
 ```rb
-# Your answer here
+ninja_turtle.delete(:radical)
 ```
 
 Add a key `pizza_toppings` to `ninja_turtle`. Set it to an array of strings (e.g., `["cheese", "pepperoni", "peppers"]`).
