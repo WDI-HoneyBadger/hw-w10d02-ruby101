@@ -10,28 +10,29 @@
 2 ** 3
 ```
 ```text
-Your answer.
+[2, 4, 6]
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+[2, 4, 6]
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+[2, 4, 6]
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+[2, 4, 6]
+Traceback (most recent call last):
 ```
 
 ```rb
@@ -39,15 +40,17 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
-```
+[2, 4, 6]
+Traceback (most recent call last):
+        1: from ruby-file.rb:104:in `<main>'
+        ```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -78,7 +81,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is:
 ```
 
 ```rb
@@ -88,7 +91,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nothing
 ```
 
 ```rb
@@ -98,8 +101,7 @@ if age
 end
 ```
 ```text
-Your answer.
-```
+error ```
 
 ```rb
 age = gets.chomp
@@ -108,7 +110,7 @@ if age
 end
 ```
 ```text
-Your answer.
+nothing 
 ```
 
 ### Conditionals
