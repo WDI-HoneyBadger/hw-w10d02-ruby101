@@ -11,28 +11,28 @@
 ```
 ```text
 Your answer.
-```
+8
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
 Your answer.
-```
+144
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
 Your answer.
-```
+"a milli a millia milli a millia milli a milli"
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
 Your answer.
-```
+a milli a milli
 
 ```rb
 my_favorite_number = 13
@@ -40,7 +40,7 @@ puts "My favorite number is: " + my_favorite_number
 ```
 ```text
 Your answer.
-```
+i'm getting an error
 
 ```rb
 my_favorite_number = 13
@@ -48,21 +48,21 @@ puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
 Your answer.
-```
+My favorite number is: 13
 
 ### Truthiness and Falsiness
 
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
-[ ] null
-[ ] [ ] (empty array)
-[ ] undefined
+[T ] false
+[T ] 0
+[T ] ""
+[ F] null
+[T ] [ ] (empty array)
+[ F] undefined
 [ ] NaN
-[ ] nil
+[T ] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -79,7 +79,8 @@ end
 ```
 ```text
 Your answer.
-```
+at first i saw nil. However, the answer is 
+My name is: 
 
 ```rb
 no_name = nil
@@ -89,7 +90,7 @@ end
 ```
 ```text
 Your answer.
-```
+nil
 
 ```rb
 age = 21
@@ -99,7 +100,7 @@ end
 ```
 ```text
 Your answer.
-```
+TypeError (no implicit conversion of nil into String)
 
 ```rb
 age = gets.chomp
@@ -109,7 +110,8 @@ end
 ```
 ```text
 Your answer.
-```
+My age is: 
+ => nil 
 
 ### Conditionals
 

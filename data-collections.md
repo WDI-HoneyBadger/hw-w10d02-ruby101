@@ -10,16 +10,20 @@ Access the second value in `planeteers`.
 
 ```rb
 # Your answer here
-```
+puts planeteers[1]
 
 Add "Heart" to the end of `planeteers`.
 
 ```rb
 # Your answer here
-```
+using the shuffle method
+planeteers << "heart"
 
 Remove "Captain Planet" from the array (without using a method).
 
+I've done it with different methods but it didn't work
+1.planeteers.pop #=> Captain Planet
+2.planeteers.delete_at(2)
 ```rb
 # Your answer here
 ```
@@ -28,19 +32,23 @@ Combine `planeteers` with `rangers = ["Red", "Blue", "Pink", "Yellow", "Black"]`
 
 ```rb
 # Your answer here
-```
+to combine the two arrays 
+1.planeteers + rangers
+2.planeteers.concat(rangers) 
+
 
 Alphabetize the contents of `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.2.0/Array.html).
 
 ```rb
 # Your answer here
-```
+puts planeteers.sort
 
 Randomize the contents of `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.2.0/Array.html).
 
 ```rb
 # Your answer here
-```
+a = [ h, e, r, o, e, s ]
+puts a.sample
 
 #### Bonus
 
