@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is:  ==>> prints it empty.
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+  ==> yes, nothing. Because the condition returns false
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Error ==> because age is int and the rest is string. If you want to print it, you should put #{age}
 ```
 
 ```rb
@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+My age is: "User Input" ==> gets = means wait for the user to put something, while chomp break the line.
 ```
 
 ### Conditionals
