@@ -17,13 +17,15 @@
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
- => 144```
+ => 144
+ ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
- => "a milli a millia milli a millia milli a milli"```
+ => "a milli a millia milli a millia milli a milli"
+ ```
 
 ```rb
 ("a milli " * 4) / 2
