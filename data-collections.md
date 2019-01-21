@@ -15,19 +15,20 @@ puts planeteers[1]
 Add "Heart" to the end of `planeteers`.
 
 ```rb
-# Your answer here
+puts planeteers << "Heart"
+
 ```
 
 Remove "Captain Planet" from the array (without using a method).
 
 ```rb
-# Your answer here
+puts planeteers.delete(2)
 ```
 
 Combine `planeteers` with `rangers = ["Red", "Blue", "Pink", "Yellow", "Black"]` and save the result in a variable called `heroes`.
 
 ```rb
-# Your answer here
+puts heroes = rangers + planeteers
 ```
 
 Alphabetize the contents of `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.2.0/Array.html).
@@ -39,7 +40,8 @@ Alphabetize the contents of `heroes` using a method. [The Ruby documentation mig
 Randomize the contents of `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.2.0/Array.html).
 
 ```rb
-# Your answer here
+puts rangers.sort_by { rand }
+
 ```
 
 #### Bonus
