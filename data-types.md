@@ -10,28 +10,28 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8 ==> 2 * 2 * 2
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144 ==> 16/4 = 4, 2+1 = 3, 4*3 = 12, 12 * 12 = 144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+a milli a millia milli a millia milli a milli ==> it would pritn it 3 times.
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Error ==> because a milli is string and /2 is int
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+Error ==> + variableName means int and it would print string.
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13 ==> because we put #{variableName}
 ```
 
 ### Truthiness and Falsiness
