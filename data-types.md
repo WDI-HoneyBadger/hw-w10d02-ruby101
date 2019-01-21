@@ -10,29 +10,27 @@
 2 ** 3
 ```
 ```text
-[2, 4, 6]
+8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
-```
 ```text
-[2, 4, 6]
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-[2, 4, 6]
+a milli a millia milli a millia milli a milli
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-[2, 4, 6]
-Traceback (most recent call last):
+Error out
 ```
 
 ```rb
@@ -40,10 +38,8 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-[2, 4, 6]
-Traceback (most recent call last):
-        1: from ruby-file.rb:104:in `<main>'
-        ```
+Error out
+ ```
 
 ```rb
 my_favorite_number = 13
@@ -91,7 +87,7 @@ if no_name
 end
 ```
 ```text
-nothing
+nil
 ```
 
 ```rb
