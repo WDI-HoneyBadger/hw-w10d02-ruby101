@@ -106,4 +106,4 @@ Print out each key-value pair in the following format - "KEY's is equal to VALUE
 key_value_hash = ninja_turtle.each do |key, value|
         puts "#{key} is equal to #{value}"
     end
-    ```
+```
