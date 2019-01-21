@@ -10,7 +10,7 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8
 ```
 
 ```rb
@@ -24,14 +24,14 @@ Your answer.
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+a milli a millia milli a millia milli a milli
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+undefined method `/' for "a milli a milli a milli a milli ":String.
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+ no implicit conversion of Integer into String 
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +55,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[F ] false
 [ ] 0
 [ ] ""
-[ ] null
-[ ] [ ] (empty array)
+[Error out] null
+[F] [ ] (empty array)
 [ ] undefined
-[ ] NaN
-[ ] nil
+[F] NaN
+[F] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is:
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nothiing
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Error out
 ```
 
 ```rb
@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+My age is: 23
 ```
 
 ### Conditionals
@@ -120,6 +120,7 @@ Write the code for the following exercise inside of the `app.rb` located in this
 Fizz-Buzz is a classic coding exercise that you can create using your knowledge of conditionals and loops. Implement code that does the following...
 
 * Counts from 1 to 100 and prints out something for each number.
+
 * If the number is divisible by 3, print `"Fizz"`.
 * If the number is divisible by 5, print `"Buzz"`.
 * If the number is divisible by both 3 and 5, print `"FizzBuzz"`.
@@ -134,10 +135,20 @@ Your output should look something like this...
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
   ```rb
-  i = 1
-  while i <= 100
-    # Your code goes in here.
+  num = 1
+while num <= 100
+    if ( num % 3=== 0 && num % 5=== 0)
+        puts "fizzBuzz"
+    elsif num % 5 == 0
+        puts "Buzz"
+    elsif  num % 3 == 0
+        puts "Fizz"
+    else
+        puts num
+      end
+      num = num +1
   end
+
   ```
 
 </details>
