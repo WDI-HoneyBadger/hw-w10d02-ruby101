@@ -95,7 +95,7 @@ ninja_turtle[:pizza_toppings][0]
 Produce an array containing all of `ninja_turtle`'s keys using a method. [The Ruby documentation might help](http://ruby-doc.org/core-1.9.3/Hash.html).
 
 ```rb
-# Your answer here
+array_of_keys = ninja_turtle.keys.inspect
 ```
 
 #### Bonus
