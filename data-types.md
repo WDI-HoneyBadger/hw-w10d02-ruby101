@@ -17,21 +17,22 @@
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+a milli a millia milli a millia milli a milli
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+ruby_file.rb:15:in `<main>': undefined method `/' for "a milli a milli a milli a milli ":String (NoMethodError)
+ak@AKs-MacBook-Pro ruby_file $
 ```
 
 ```rb
@@ -39,7 +40,10 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+Traceback (most recent call last):
+        1: from ruby_file.rb:16:in `<main>'
+ruby_file.rb:16:in `+': no implicit conversion of Integer into String (TypeError)
+ak@AKs-MacBook-Pro ruby_file $
 ```
 
 ```rb
@@ -47,7 +51,8 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+13
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +60,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
-[ ] null
-[ ] [ ] (empty array)
-[ ] undefined
-[ ] NaN
-[ ] nil
+[False ] false
+[true] 0
+[ true ] ""
+[ error] null
+[ true] [ ] (empty array)
+[error] undefined
+[ error] NaN
+[nothing ] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +83,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is:
 ```
 
 ```rb
@@ -98,7 +103,7 @@ if age
 end
 ```
 ```text
-Your answer.
+main:Object (NameError).
 ```
 
 ```rb
@@ -134,9 +139,13 @@ Your output should look something like this...
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
   ```rb
-  i = 1
-  while i <= 100
-    # Your code goes in here.
+  n = 1
+  while n <= 100
+    fizz = if n % 3 == 0 then 'fizz' end
+        buzz = if n % 5 == 0 then 'buzz' end
+        x = if n % 5 != 0 && n % 3 != 0 then "#{n}" end
+        puts y="#{x} #{fizz}#{buzz}"
+        n = n+1
   end
   ```
 
