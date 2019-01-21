@@ -10,28 +10,30 @@
 2 ** 3
 ```
 ```text
-Your answer.
+2 to the power of 3, results in 8.
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+(4 * 3) to the power of 2, results in 144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+concatenates to "a milli a milli" and the multiplication gives 3 times that string
+results in "a milli a millia milli a millia milli a milli"
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+cannot use / on strings, results in error.
+could do ("a milli " * (4 / 2)) instead
 ```
 
 ```rb
@@ -39,7 +41,11 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+results in error, cannot convert my_favorite_number to a string implicitly.
+could do:
+puts "My favorite number is: #{my_favorite_number}"
+or
+puts "My favorite number is: " + my_favorite_number.to_s
 ```
 
 ```rb
@@ -47,7 +53,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+yeah answered above, results in "My favorite number is: 13"
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +61,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
-[ ] null
-[ ] [ ] (empty array)
-[ ] undefined
-[ ] NaN
-[ ] nil
+[false] false
+[true] 0
+[true] ""
+[error, n/a] null
+[true] [ ] (empty array)
+[error, n/a] undefined
+[error, n/a] NaN
+[false] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +84,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+results in "My name is: "
 ```
 
 ```rb
@@ -88,7 +94,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+prints nothing because the condition will result to false
 ```
 
 ```rb
@@ -98,7 +104,7 @@ if age
 end
 ```
 ```text
-Your answer.
+condition evaluates to true so it'll print "My name is: " if no_name is actually defined previously, otherwise it'll error out.
 ```
 
 ```rb
@@ -108,7 +114,7 @@ if age
 end
 ```
 ```text
-Your answer.
+prints out "My age is: #{the input from user}"
 ```
 
 ### Conditionals
