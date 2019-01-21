@@ -10,28 +10,28 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+a milli a millia milli a millia milli a milli
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+a milli a milli 
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+it will return error.
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +55,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
-[ ] null
-[ ] [ ] (empty array)
-[ ] undefined
-[ ] NaN
-[ ] nil
+[true] false
+[true] 0
+[true] ""
+[false] null
+[true] [ ] (empty array)
+[false] undefined
+[false] NaN
+[true] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is: 
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+It will return nothing
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+no implicit conversion of nil into String 
 ```
 
 ```rb
@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+The age will take the value that I type on the terminal.
 ```
 
 ### Conditionals
@@ -134,9 +134,16 @@ Your output should look something like this...
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
   ```rb
-  i = 1
-  while i <= 100
-    # Your code goes in here.
+1.upto(100) do |i|
+    if i % 5 == 0 and i % 3 == 0
+      puts "FizzBuzz"
+    elsif i % 5 == 0
+      puts "Buzz"
+    elsif i % 3 == 0
+      puts "Fizz"
+    else
+      puts i
+    end
   end
   ```
 
