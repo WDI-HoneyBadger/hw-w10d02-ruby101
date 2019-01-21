@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Error out
+My age is: 20
 ```
 
 ### Conditionals
