@@ -10,28 +10,28 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8 ==> 2 * 2 * 2
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144 ==> 16/4 = 4, 2+1 = 3, 4*3 = 12, 12 * 12 = 144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+a milli a millia milli a millia milli a milli ==> it would pritn it 3 times.
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Error ==> because a milli is string and /2 is int
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+Error ==> + variableName means int and it would print string.
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13 ==> because we put #{variableName}
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +55,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
-[ ] null
-[ ] [ ] (empty array)
-[ ] undefined
-[ ] NaN
-[ ] nil
+[false] false
+[true ] 0
+[true ] ""
+[false ] null
+[false] [ ] (empty array)
+[false] undefined
+[false ] NaN
+[false ] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is:  ==>> prints it empty.
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+  ==> yes, nothing. Because the condition returns false
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Error ==> because age is int and the rest is string. If you want to print it, you should put #{age}
 ```
 
 ```rb
@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+My age is: "User Input" ==> gets = means wait for the user to put something, while chomp break the line.
 ```
 
 ### Conditionals
